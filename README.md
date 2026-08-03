@@ -1,9 +1,8 @@
-# Tallio — shared expenses for two
+# Tallio legal pages
 
-Public Tallio product guide and privacy policy, hosted via GitHub Pages.
+Public privacy policy for the Tallio app, hosted separately from the product
+website via GitHub Pages.
 
 Live at: https://ciesls.github.io/tallio-legal/
 
-The home page combines the Tallio product guide with the app screenshots and
-feature overview from the private draft. The privacy policy is available at
-https://ciesls.github.io/tallio-legal/privacy.html.
+The product website is available at https://ciesls.github.io/tallio/.
