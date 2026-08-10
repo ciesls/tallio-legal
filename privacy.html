@@ -42,6 +42,49 @@ header a:hover, header summary:hover { background: rgba(255,255,255,.05); }
 .pagenav a:hover { color: #f4cb7e; border-color: rgba(232,184,100,.28); }
 @media (min-width: 1220px) { .rail { display: grid; } .pagenav { display: none; } }
 
+/* Match the wide editorial layout used by the legal-page reference. */
+@media (min-width: 1220px) {
+  header { display: none !important; }
+  body > div[style*="height:69px"] { display: none !important; }
+  .rail {
+    left: max(24px, calc((100vw - 1844px) / 2)) !important;
+    top: 68% !important;
+    gap: 8px;
+  }
+  .rail a {
+    padding: 11px 0 !important;
+    font-size: 1rem !important;
+    gap: 14px;
+  }
+  main.legal-main {
+    width: min(1472px, calc(100vw - 576px)) !important;
+    margin: 0 0 0 max(396px, calc((100vw - 1844px) / 2 + 294px)) !important;
+    padding: 92px 0 90px !important;
+  }
+  main.legal-main > h1 {
+    margin-top: 42px !important;
+    margin-bottom: 22px !important;
+    font-size: clamp(4rem, 6vw, 7.6rem) !important;
+  }
+  main.legal-main > p.legal-updated {
+    margin-bottom: 84px !important;
+    font-size: 1rem !important;
+  }
+  main.legal-main > p.legal-intro {
+    margin-bottom: 78px !important;
+    font-size: 1.85rem !important;
+    line-height: 1.72 !important;
+  }
+  main.legal-main section h2 {
+    font-size: 2.2rem !important;
+  }
+  main.legal-main section p,
+  main.legal-main section ul {
+    font-size: 1.4rem !important;
+    line-height: 1.75 !important;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -70,11 +113,11 @@ header a:hover, header summary:hover { background: rgba(255,255,255,.05); }
     <a href="#changes"><span class="bar"></span><span>Changes</span></a>
   </nav>
 
-<main id="top" style="width:min(calc(100% - 40px),860px);margin:0 auto;padding:88px 0 90px;display:grid;grid-template-columns:1fr">
+<main id="top" class="legal-main" style="width:min(calc(100% - 40px),860px);margin:0 auto;padding:88px 0 90px;display:grid;grid-template-columns:1fr">
   <span style="display:inline-flex;color:#e8b864;letter-spacing:.14em;text-transform:uppercase;font-size:.74rem;font-weight:680">Tallio privacy</span>
   <h1 style="max-width:780px;margin:20px 0 12px;font-size:clamp(2.8rem,6vw,4.6rem);font-weight:620;line-height:1;letter-spacing:-.05em">Privacy Policy</h1>
-  <p style="margin:0 0 44px;color:#817d86;font-size:.82rem;letter-spacing:.04em;text-transform:uppercase">Last updated: July 22, 2026</p>
-  <p style="margin:0 0 40px;color:#b8b4bc;font-size:1.18rem;line-height:1.7">Tallio is a shared expense-tracking app for two people. This page explains what data Tallio handles and how it is used. The short version: there is no Tallio server, so there is nothing for the developer to collect.</p>
+  <p class="legal-updated" style="margin:0 0 44px;color:#817d86;font-size:.82rem;letter-spacing:.04em;text-transform:uppercase">Last updated: July 22, 2026</p>
+  <p class="legal-intro" style="margin:0 0 40px;color:#b8b4bc;font-size:1.18rem;line-height:1.7">Tallio is a shared expense-tracking app for two people. This page explains what data Tallio handles and how it is used. The short version: there is no Tallio server, so there is nothing for the developer to collect.</p>
 
   <nav class="pagenav" aria-label="On this page">
     <span class="eyebrow">On this page</span>
