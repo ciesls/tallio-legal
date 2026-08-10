@@ -1,236 +1,177 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Tallio privacy policy: what the shared expense app stores, how it syncs, and how data is protected."
-    />
-    <title>Tallio — Privacy Policy</title>
-    <link rel="icon" href="./app-icon.png" />
-    <link rel="stylesheet" href="./assets/index-BVp2QGaC.css" />
-    <style>
-      .legal-page {
-        width: min(calc(100% - 48px), 820px);
-        margin: 0 auto;
-        padding: 112px 0 96px;
-      }
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tallio — Privacy Policy</title>
+<meta name="description" content="How Tallio handles your data. There is no Tallio server — everything lives in your own iCloud.">
+<link rel="canonical" href="https://ciesls.github.io/tallio-legal/privacy.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tallio">
+<meta property="og:url" content="https://ciesls.github.io/tallio-legal/privacy.html">
+<meta property="og:title" content="Tallio — Privacy Policy">
+<meta property="og:description" content="How Tallio handles your data. There is no Tallio server — everything lives in your own iCloud.">
+<meta property="og:image" content="https://ciesls.github.io/tallio/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tallio — Privacy Policy">
+<meta name="twitter:description" content="How Tallio handles your data. There is no Tallio server — everything lives in your own iCloud.">
+<meta name="twitter:image" content="https://ciesls.github.io/tallio/og.png">
+<link rel="icon" href="app-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 96px; background: #0f0e11; }
+body { margin: 0; background: radial-gradient(circle at 85% 8%, rgba(232,184,100,.08), transparent 23rem), #0f0e11; color: #f7f5f1; font-family: "Geist", "SF Pro Display", -apple-system, system-ui, sans-serif; text-rendering: optimizeLegibility; }
+a { color: #f4cb7e; text-decoration: none; }
+a:hover { color: #e8b864; text-decoration: underline; }
+img { display: block; max-width: 100%; }
+::selection { background: #e8b864; color: #2a1c08; }
 
-      .legal-page h1 {
-        max-width: 780px;
-        margin: 20px 0 12px;
-        font-size: clamp(3.2rem, 8vw, 6.4rem);
-        font-weight: 620;
-        line-height: 0.94;
-        letter-spacing: -0.07em;
-      }
+[style-hover]:hover { color: #f4cb7e; }
+header a:hover, header summary:hover { background: rgba(255,255,255,.05); }
+.rail a, .strip a { text-decoration: none; }
+.rail a { display: flex; align-items: center; gap: 12px; padding: 7px 0; color: #6f6b74; font-size: .72rem; font-weight: 500; letter-spacing: .075em; text-transform: uppercase; transition: color .2s; }
+.rail a.on { color: #f4cb7e; font-weight: 620; }
+.rail .bar { height: 1px; width: 14px; background: rgba(255,255,255,.24); transition: width .24s cubic-bezier(.4,0,.2,1), background .24s; }
+.rail a.on .bar { width: 30px; background: #e8b864; }
 
-      .legal-updated {
-        margin: 0 0 56px;
-        color: var(--text-muted);
-        font-size: 0.82rem;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-      }
+.rail { position: fixed; left: max(18px, calc((100vw - 860px) / 2 - 172px)); top: 52%; transform: translateY(-50%); z-index: 40; display: none; gap: 3px; padding: 6px 0; }
+.pagenav { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 56px; padding: 20px; border: 1px solid rgba(255,255,255,.10); border-radius: 18px; background: rgba(255,255,255,.024); }
+.pagenav span.eyebrow { flex-basis: 100%; color: #817d86; font-size: .68rem; font-weight: 670; letter-spacing: .12em; text-transform: uppercase; }
+.pagenav a { padding: 8px 12px; border: 1px solid rgba(255,255,255,.10); border-radius: 999px; color: #b8b4bc; font-size: .8rem; text-decoration: none; }
+.pagenav a:hover { color: #f4cb7e; border-color: rgba(232,184,100,.28); }
+@media (min-width: 1220px) { .rail { display: grid; } .pagenav { display: none; } }
 
-      .legal-intro {
-        margin: 0 0 70px;
-        color: var(--text-soft);
-        font-size: 1.18rem;
-        line-height: 1.7;
-      }
+</style>
+</head>
+<body>
+<header style="position:fixed;top:0;left:0;right:0;z-index:50;width:100%;display:grid;grid-template-columns:auto minmax(0,1fr) auto auto;align-items:center;gap:10px;padding:14px max(20px, calc((100% - 1240px) / 2));backdrop-filter:blur(22px) saturate(140%);-webkit-backdrop-filter:blur(22px) saturate(140%);background:rgba(15,14,17,.78);border-bottom:1px solid rgba(255,255,255,.07)">
+  <a href="https://ciesls.github.io/tallio/" style="display:inline-flex;align-items:center;gap:11px;font-size:1.12rem;font-weight:680;letter-spacing:-.025em;color:#f7f5f1;width:max-content" style-hover="color:#f7f5f1">
+    <img src="app-icon.png" alt="" width="38" height="38" style="border-radius:10px;box-shadow:0 8px 28px rgba(0,0,0,.42)">
+    <span>Tallio</span>
+  </a>
+  <div style="display:flex;align-items:center;justify-content:flex-end;gap:6px;min-width:0;overflow-x:auto;scrollbar-width:none">
+    <a href="https://ciesls.github.io/tallio/#features" style="color:#b8b4bc;font-size:.86rem;padding:8px 12px;border-radius:999px;white-space:nowrap" style-hover="color:#f4cb7e;background:rgba(255,255,255,.05)">Features</a>
+    <a href="https://ciesls.github.io/tallio/support.html" style="color:#b8b4bc;font-size:.86rem;padding:8px 12px;border-radius:999px;white-space:nowrap" style-hover="color:#f4cb7e;background:rgba(255,255,255,.05)">Support</a>
+  </div>
+  <a aria-current="page" href="#top" style="justify-self:end;color:#f4cb7e;font-size:.86rem;padding:8px 12px;border-radius:999px;white-space:nowrap;background:rgba(255,255,255,.05)">Legal</a>
+  <a href="https://apps.apple.com/app/tallio" style="justify-self:end;padding:10px 17px;border-radius:999px;border:1px solid rgba(232,184,100,.28);background:rgba(232,184,100,.09);color:#f4cb7e;font-size:.84rem;font-weight:600;white-space:nowrap">Download</a>
+</header>
+<div style="height:69px"></div>
 
-      .legal-section {
-        padding: 30px 0 34px;
-        border-top: 1px solid var(--line);
-      }
+<nav class="rail" data-spy aria-label="Sections">
+    <a href="#stores" class="on"><span class="bar"></span><span>What is stored</span></a>
+    <a href="#sync"><span class="bar"></span><span>Storage & sync</span></a>
+    <a href="#purchases"><span class="bar"></span><span>Purchases</span></a>
+    <a href="#tracking"><span class="bar"></span><span>Analytics & ads</span></a>
+    <a href="#siri"><span class="bar"></span><span>Siri & widgets</span></a>
+    <a href="#deletion"><span class="bar"></span><span>Data deletion</span></a>
+    <a href="#children"><span class="bar"></span><span>Children</span></a>
+    <a href="#changes"><span class="bar"></span><span>Changes</span></a>
+  </nav>
 
-      .legal-section h2 {
-        margin: 0 0 12px;
-        color: var(--text);
-        font-size: 1.38rem;
-        font-weight: 610;
-        letter-spacing: -0.025em;
-      }
+<main id="top" style="width:min(calc(100% - 40px),860px);margin:0 auto;padding:88px 0 90px;display:grid;grid-template-columns:1fr">
+  <span style="display:inline-flex;color:#e8b864;letter-spacing:.14em;text-transform:uppercase;font-size:.74rem;font-weight:680">Tallio privacy</span>
+  <h1 style="max-width:780px;margin:20px 0 12px;font-size:clamp(2.8rem,6vw,4.6rem);font-weight:620;line-height:1;letter-spacing:-.05em">Privacy Policy</h1>
+  <p style="margin:0 0 44px;color:#817d86;font-size:.82rem;letter-spacing:.04em;text-transform:uppercase">Last updated: July 22, 2026</p>
+  <p style="margin:0 0 40px;color:#b8b4bc;font-size:1.18rem;line-height:1.7">Tallio is a shared expense-tracking app for two people. This page explains what data Tallio handles and how it is used. The short version: there is no Tallio server, so there is nothing for the developer to collect.</p>
 
-      .legal-section p,
-      .legal-section li {
-        color: var(--text-soft);
-        font-size: 0.98rem;
-        line-height: 1.75;
-      }
+  <nav class="pagenav" aria-label="On this page">
+    <span class="eyebrow">On this page</span>
+    <a href="#stores">What is stored</a>
+    <a href="#sync">Storage & sync</a>
+    <a href="#purchases">Purchases</a>
+    <a href="#tracking">Analytics & ads</a>
+    <a href="#siri">Siri & widgets</a>
+    <a href="#deletion">Data deletion</a>
+    <a href="#children">Children</a>
+    <a href="#changes">Changes</a>
+  </nav>
 
-      .legal-section p {
-        margin: 0 0 16px;
-      }
+  <section id="stores" style="padding:30px 0 34px;border-top:1px solid rgba(255,255,255,.10)">
+    <h2 style="margin:0 0 12px;color:#f7f5f1;font-size:1.38rem;font-weight:610;letter-spacing:-.025em">Data Tallio stores</h2>
+    <p style="margin:0 0 16px;color:#b8b4bc;font-size:.98rem;line-height:1.75">Tallio stores the information you enter to track shared expenses:</p>
+    <ul style="margin:0;padding-left:1.3rem;color:#b8b4bc;font-size:.98rem;line-height:1.75">
+      <li>Expense and settlement records (amount, category, date, an optional comment, and who paid)</li>
+      <li>Recurring expense/settlement rules you set up</li>
+      <li>Categories and budgets you create</li>
+      <li>Display names for the two people using the shared household</li>
+    </ul>
+  </section>
 
-      .legal-section p:last-child {
-        margin-bottom: 0;
-      }
+  <section id="sync" style="padding:30px 0 34px;border-top:1px solid rgba(255,255,255,.10)">
+    <h2 style="margin:0 0 12px;color:#f7f5f1;font-size:1.38rem;font-weight:610;letter-spacing:-.025em">How your data is stored and synced</h2>
+    <p style="margin:0 0 16px;color:#b8b4bc;font-size:.98rem;line-height:1.75">Tallio has no backend server operated by the developer. All data is stored using Apple's CloudKit, in your own iCloud account, and synced directly between the two members of a shared household using Apple's CloudKit Sharing. Your data is never sent to the developer or to any third party. Access to it is governed by your Apple ID and Apple's own privacy and security practices.</p>
+    <p style="margin:0;color:#b8b4bc;font-size:.98rem;line-height:1.75">If you don't enable iCloud sync, your data stays only on your device.</p>
+  </section>
 
-      .legal-section ul {
-        margin: 0;
-        padding-left: 1.3rem;
-      }
+  <section id="purchases" style="padding:30px 0 34px;border-top:1px solid rgba(255,255,255,.10)">
+    <h2 style="margin:0 0 12px;color:#f7f5f1;font-size:1.38rem;font-weight:610;letter-spacing:-.025em">Purchases and refunds</h2>
+    <p style="margin:0 0 16px;color:#b8b4bc;font-size:.98rem;line-height:1.75">Tallio offers an optional one-time in-app purchase to unlock Pro features. Purchases are processed entirely by Apple through StoreKit — Tallio never receives or stores your payment details.</p>
+    <p style="margin:0;color:#b8b4bc;font-size:.98rem;line-height:1.75">Refunds are handled by Apple, not by the developer. Request one at <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a>.</p>
+  </section>
 
-      .legal-section a,
-      .legal-contact a {
-        color: var(--gold-bright);
-      }
+  <section id="tracking" style="padding:30px 0 34px;border-top:1px solid rgba(255,255,255,.10)">
+    <h2 style="margin:0 0 12px;color:#f7f5f1;font-size:1.38rem;font-weight:610;letter-spacing:-.025em">Analytics, ads, and tracking</h2>
+    <p style="margin:0;color:#b8b4bc;font-size:.98rem;line-height:1.75">Tallio does not use any third-party analytics, advertising, or tracking SDKs. The developer does not collect usage data, and your activity in the app is not shared with anyone.</p>
+  </section>
 
-      .legal-contact {
-        margin-top: 18px;
-        padding: 26px 0 0;
-        border-top: 1px solid var(--line-gold);
-        color: var(--text-soft);
-        font-size: 0.96rem;
-        line-height: 1.7;
-      }
+  <section id="siri" style="padding:30px 0 34px;border-top:1px solid rgba(255,255,255,.10)">
+    <h2 style="margin:0 0 12px;color:#f7f5f1;font-size:1.38rem;font-weight:610;letter-spacing:-.025em">Siri, Shortcuts, and widgets</h2>
+    <p style="margin:0;color:#b8b4bc;font-size:.98rem;line-height:1.75">Support for Siri, Shortcuts, and home-screen widgets works entirely on-device using Apple's frameworks. No expense data leaves your device or iCloud account through these features.</p>
+  </section>
 
-      .legal-footer {
-        width: min(calc(100% - 48px), var(--max-width));
-        margin: 0 auto;
-        padding: 26px 0 40px;
-        border-top: 1px solid var(--line);
-        color: var(--text-muted);
-      }
+  <section id="deletion" style="padding:30px 0 34px;border-top:1px solid rgba(255,255,255,.10)">
+    <h2 style="margin:0 0 12px;color:#f7f5f1;font-size:1.38rem;font-weight:610;letter-spacing:-.025em">Data deletion</h2>
+    <p style="margin:0 0 16px;color:#b8b4bc;font-size:.98rem;line-height:1.75">You can delete individual records at any time from within the app. To remove all data, delete the app and, if you wish, remove its data from iCloud via Settings → [your name] → iCloud → Manage Account Storage on your device.</p>
+    <p style="margin:0;color:#b8b4bc;font-size:.98rem;line-height:1.75">Because the developer holds no copy of your ledger, there is no deletion request to submit — removing it from your iCloud removes it entirely.</p>
+  </section>
 
-      .legal-footer a {
-        color: var(--text-soft);
-      }
+  <section id="children" style="padding:30px 0 34px;border-top:1px solid rgba(255,255,255,.10)">
+    <h2 style="margin:0 0 12px;color:#f7f5f1;font-size:1.38rem;font-weight:610;letter-spacing:-.025em">Children's privacy</h2>
+    <p style="margin:0;color:#b8b4bc;font-size:.98rem;line-height:1.75">Tallio is not directed at children and the developer does not knowingly collect data from children under 13.</p>
+  </section>
 
-      .legal-footer a:hover {
-        color: var(--gold);
-      }
+  <section id="changes" style="padding:30px 0 34px;border-top:1px solid rgba(255,255,255,.10)">
+    <h2 style="margin:0 0 12px;color:#f7f5f1;font-size:1.38rem;font-weight:610;letter-spacing:-.025em">Changes to this policy</h2>
+    <p style="margin:0;color:#b8b4bc;font-size:.98rem;line-height:1.75">If this policy changes, the update will be posted on this page with a revised "last updated" date.</p>
+  </section>
 
-      @media (max-width: 720px) {
-        .site-header {
-          grid-template-columns: 1fr auto;
-        }
+  <p style="margin-top:18px;padding:26px 0 0;border-top:1px solid rgba(232,184,100,.28);color:#b8b4bc;font-size:.96rem;line-height:1.7">
+    Questions or data requests: <a href="mailto:szymoncieslaa@gmail.com">szymoncieslaa@gmail.com</a>
+  </p>
+</main>
 
-        .site-header nav {
-          display: none;
-        }
+<footer style="width:min(calc(100% - 40px),1240px);margin:0 auto;display:flex;flex-wrap:wrap;gap:22px;justify-content:space-between;padding:26px 0 40px;border-top:1px solid rgba(255,255,255,.10);color:#817d86;font-size:.8rem">
+  <a href="https://ciesls.github.io/tallio/" style="color:#b8b4bc" style-hover="color:#e8b864">← Back to Tallio</a>
+  <a href="https://ciesls.github.io/tallio/support.html" style="color:#b8b4bc" style-hover="color:#e8b864">Support</a>
+</footer>
 
-        .legal-page {
-          width: min(calc(100% - 36px), 820px);
-          padding-top: 78px;
-        }
+<script>
+(function(){
+  var ids = ["stores","sync","purchases","tracking","siri","deletion","children","changes"];
+  var links = [].slice.call(document.querySelectorAll('[data-spy] a'));
+  var bars = document.querySelector('[data-bars]');
+  var spacer = document.querySelector('[data-spacer]');
+  var queued = false;
+  function sync(){
+    if (bars && spacer) spacer.style.height = bars.offsetHeight + 'px';
+    var mark = window.innerHeight * 0.32;
+    var active = ids[0];
+    ids.forEach(function(id){
+      var el = document.getElementById(id);
+      if (el && el.getBoundingClientRect().top <= mark) active = id;
+    });
+    links.forEach(function(a){
+      a.classList.toggle('on', a.getAttribute('href') === '#' + active);
+    });
+  }
+  function tick(){ if (queued) return; queued = true; requestAnimationFrame(function(){ queued = false; sync(); }); }
+  window.addEventListener('scroll', tick, { passive: true });
+  window.addEventListener('resize', tick);
+  sync(); setTimeout(sync, 300);
+})();
+</script>
 
-        .legal-footer {
-          width: min(calc(100% - 36px), var(--max-width));
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="https://ciesls.github.io/tallio/" aria-label="Tallio home">
-        <img src="./app-icon.png" alt="" width="42" height="42" />
-        <span>Tallio</span>
-      </a>
-      <nav aria-label="Primary navigation">
-        <a href="https://ciesls.github.io/tallio/#features">Features</a>
-        <a href="https://ciesls.github.io/tallio/#guide">Guide</a>
-        <a href="./privacy.html" aria-current="page">Privacy</a>
-      </nav>
-      <a class="header-cta" href="https://ciesls.github.io/tallio/#start">Get started</a>
-    </header>
-
-    <main class="legal-page">
-      <span class="section-kicker">Tallio privacy</span>
-      <h1>Privacy Policy</h1>
-      <p class="legal-updated">Last updated: July 22, 2026</p>
-
-      <p class="legal-intro">
-        Tallio is a shared expense-tracking app for two people. This page explains what data
-        Tallio handles and how it is used.
-      </p>
-
-      <section class="legal-section">
-        <h2>Data Tallio stores</h2>
-        <p>Tallio stores the information you enter to track shared expenses:</p>
-        <ul>
-          <li>Expense and settlement records (amount, category, date, an optional comment, and who paid)</li>
-          <li>Recurring expense/settlement rules you set up</li>
-          <li>Categories and budgets you create</li>
-          <li>Display names for the two people using the shared household</li>
-        </ul>
-      </section>
-
-      <section class="legal-section">
-        <h2>How your data is stored and synced</h2>
-        <p>
-          Tallio has no backend server operated by the developer. All data is stored using
-          Apple's CloudKit, in your own iCloud account, and synced directly between the two
-          members of a shared household using Apple's CloudKit Sharing. Your data is never sent
-          to the developer or to any third party. Access to it is governed by your Apple ID and
-          Apple's own privacy and security practices.
-        </p>
-        <p>If you don't enable iCloud sync, your data stays only on your device.</p>
-      </section>
-
-      <section class="legal-section">
-        <h2>Purchases</h2>
-        <p>
-          Tallio offers an optional one-time in-app purchase to unlock Pro features. Purchases
-          are processed entirely by Apple through StoreKit — Tallio never receives or stores your
-          payment details.
-        </p>
-      </section>
-
-      <section class="legal-section">
-        <h2>Analytics, ads, and tracking</h2>
-        <p>
-          Tallio does not use any third-party analytics, advertising, or tracking SDKs. The
-          developer does not collect usage data, and your activity in the app is not shared with
-          anyone.
-        </p>
-      </section>
-
-      <section class="legal-section">
-        <h2>Siri, Shortcuts, and widgets</h2>
-        <p>
-          Support for Siri, Shortcuts, and home-screen widgets works entirely on-device using
-          Apple's frameworks. No expense data leaves your device or iCloud account through these
-          features.
-        </p>
-      </section>
-
-      <section class="legal-section">
-        <h2>Data deletion</h2>
-        <p>
-          You can delete individual records at any time from within the app. To remove all data,
-          delete the app and, if you wish, remove its data from iCloud via Settings → [your name]
-          → iCloud → Manage Account Storage on your device.
-        </p>
-      </section>
-
-      <section class="legal-section">
-        <h2>Children's privacy</h2>
-        <p>
-          Tallio is not directed at children and the developer does not knowingly collect data
-          from children under 13.
-        </p>
-      </section>
-
-      <section class="legal-section">
-        <h2>Changes to this policy</h2>
-        <p>
-          If this policy changes, the update will be posted on this page with a revised "last
-          updated" date.
-        </p>
-      </section>
-
-      <p class="legal-contact">
-        Questions or data requests:
-        <a href="mailto:szymoncieslaa@gmail.com">szymoncieslaa@gmail.com</a>
-      </p>
-    </main>
-
-    <footer class="legal-footer">
-      <a href="https://ciesls.github.io/tallio/">← Back to Tallio</a>
-    </footer>
-  </body>
+</body>
 </html>
