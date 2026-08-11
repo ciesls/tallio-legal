@@ -220,5 +220,22 @@ header a:hover, header summary:hover { background: rgba(255,255,255,.05); }
 })();
 </script>
 
+<script>
+(function(){
+  function toCamel(property){ return property.replace(/-([a-z])/g, function(_, character){ return character.toUpperCase(); }); }
+  [].slice.call(document.querySelectorAll('[style-hover]')).forEach(function(element){
+    var pairs = element.getAttribute('style-hover').split(';').map(function(declaration){
+      return declaration.trim();
+    }).filter(Boolean).map(function(declaration){
+      var separator = declaration.indexOf(':');
+      return [toCamel(declaration.slice(0, separator).trim()), declaration.slice(separator + 1).trim()];
+    });
+    var original = pairs.map(function(pair){ return element.style[pair[0]]; });
+    element.addEventListener('mouseenter', function(){ pairs.forEach(function(pair){ element.style[pair[0]] = pair[1]; }); });
+    element.addEventListener('mouseleave', function(){ pairs.forEach(function(pair, index){ element.style[pair[0]] = original[index]; }); });
+  });
+})();
+</script>
+
 </body>
 </html>
