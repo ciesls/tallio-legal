@@ -42,53 +42,6 @@ header a:hover, header summary:hover { background: rgba(255,255,255,.05); }
 .pagenav a:hover { color: #f4cb7e; border-color: rgba(232,184,100,.28); }
 @media (min-width: 1220px) { .rail { display: grid; } .pagenav { display: none; } }
 
-/* Match the wide editorial layout used by the legal-page reference. */
-@media (min-width: 1600px) {
-  header { display: none !important; }
-  body > div[style*="height:69px"] { display: none !important; }
-  .rail {
-    left: max(24px, calc((100vw - 1844px) / 2)) !important;
-    top: 68% !important;
-    gap: 8px;
-  }
-  .rail a {
-    padding: 11px 0 !important;
-    font-size: 1rem !important;
-    gap: 14px;
-  }
-  main.legal-main {
-    width: min(1472px, calc(100vw - 576px)) !important;
-    margin: 0 0 0 max(396px, calc((100vw - 1844px) / 2 + 294px)) !important;
-    padding: 92px 0 90px !important;
-  }
-  main.legal-main > h1 {
-    margin-top: 42px !important;
-    margin-bottom: 22px !important;
-    font-size: clamp(4rem, 6vw, 7.6rem) !important;
-  }
-  main.legal-main > p.legal-updated {
-    margin-bottom: 91px !important;
-    font-size: 1rem !important;
-  }
-  main.legal-main > p.legal-intro {
-    margin-bottom: 78px !important;
-    font-size: 2.1rem !important;
-    line-height: 1.65 !important;
-  }
-  main.legal-main section {
-    padding-top: 48px !important;
-    padding-bottom: 48px !important;
-  }
-  main.legal-main section h2 {
-    font-size: 2.2rem !important;
-  }
-  main.legal-main section p,
-  main.legal-main section ul {
-    font-size: 1.6rem !important;
-    line-height: 1.82 !important;
-  }
-}
-
 </style>
 </head>
 <body>
